@@ -1,0 +1,108 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div class="col-lg-9">
+	<div class="row" >
+		<h2>Make Payment:</h2>
+	</div>
+</div>
+
+<div class="col-md-6">
+  <div class="card"  align="left">
+    <div class="card-header card-header-primary">
+      <h4 class="card-title">Payment Info</h4>
+      <p class="card-category">Complete your information</p>
+    </div>
+    <div class="card-body">
+      #{form @Payments.doPayment(product.id)}
+		#{ifErrors}
+			#{list items:errors, as:'error'}
+				<p class="text-danger">${error}</p>
+			#{/list}
+		#{/ifErrors}
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="bmd-label-floating">Fist Name</label>
+              <input type="text" class="form-control" name="user.firstName" id="firstName" value="${user.firstName}" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="bmd-label-floating">Last Name</label>
+              <input type="text" class="form-control" name="user.lastName" id="lastName" value="${user.lastName}" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="bmd-label-floating">E-mail</label>
+              <input type="email" class="form-control" name="user.email" id="email" value="${user.email}" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="bmd-label-floating">Address</label>
+              <input type="text" class="form-control" name="user.address" id="address" value="${user.address}" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="bmd-label-floating">City</label>
+              <input type="text" class="form-control" name="user.city" id="city" value="${user.city}" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="bmd-label-floating">State</label>
+              <input type="text" class="form-control" name="user.state" id="state" value="${user.state}" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="bmd-label-floating">ZIP</label>
+              <input type="text" class="form-control" name="user.zip" id="zip" value="${user.zip}" required maxlength="5" pattern="[0-9]{5}" title="Zip code must have 5 digits.">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="bmd-label-floating">Card Number</label>
+              <input type="text" class="form-control" name="user.card.cardNumber" id="cardNumber" value="${user.card.cardNumber}" required maxlength="16" pattern="([0-9]{13}|[0-9]{15}|[0-9]{16})" title="Enter a valid card number.">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="bmd-label-floating">Expiration Date</label>
+              <input type="text" class="form-control" name="user.card.expDate" id="expDate" value="${user.card.expDate}" required maxlength="7" pattern="^((0[1-9])|(1[0-2]))\/(\d{4})$" title="Enter a valid date in this format MM/YYYY.">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="bmd-label-floating">CVC</label>
+              <input type="text" class="form-control" name="user.card.cvc" id="cvc" value="${user.card.cvc}" required maxlength="3" pattern="\d{3}" title="Enter a valid CVC.">
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div align="center">
+        	<button type="submit" class="btn btn-info" style="width: 300px; font-size: 18px;">Pay ${product.formatedPrice}</button>
+        </div>
+        <div class="clearfix"></div>
+      #{/form}
+    </div>
+  </div>
+</div>
+
+<script src="/public/javascripts/mask.js" type="text/javascript"></script>
+<script src="/public/javascripts/jquery.min.js" type="text/javascript"></script>
+<script src="/public/javascripts/popper.min.js" type="text/javascript"></script>
+<script src="/public/javascripts/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="/public/javascripts/perfect-scrollbar.jquery.min.js"></script>
+<script src="/public/javascripts/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>

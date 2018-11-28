@@ -1,0 +1,15 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+validation.required=Field %s is required
+validation.minSize=Field %s minimum size is %s
+
+firstName = First Name
+lastName = Last Name
+address = Address
+city = City
+zip = ZIP
+cardNumber = Card Number
+expDAte = Expiration Date
+cvc = CVC

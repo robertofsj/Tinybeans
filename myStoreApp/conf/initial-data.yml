@@ -1,0 +1,55 @@
+Product(cake):
+  name: Cake
+  description: This citrusy, buttery, moist cake is topped with a sweet vanilla icing. Cake has never been so delicious.
+  price: 3.25
+  imageName: cake.png
+
+Product(chocolate):
+  name: Chocolate
+  description: Steamed milk with vanilla- and mocha-flavored syrups. Topped with sweetened whipped cream and chocolate-flavored drizzle.
+  price: 3.65
+  imageName: chocolate.png
+
+Product(coffee):
+  name: Coffee
+  description: Lightly roasted coffee that's soft, mellow and flavorful. Easy-drinking on its own and delicious with milk, sugar or flavored with vanilla, caramel or hazelnut.
+  price: 2.65
+  imageName: coffee.png
+
+Product(croissant):
+  name: Croissant
+  description: This classic Croissant is made with 100 percent butter to create a golden, crunchy top and soft, flakey layers inside. The perfect match for a cup of Pike Place Roast.
+  price: 2.75
+  imageName: croissant.png
+
+Product(cupcake):
+  name: Cupcake
+  description: During the holidays we love to dress up our stores, our cups... and our cupcakes. This adorably festive treat is vanilla cake covered in a chocolaty coating.
+  price: 2.25
+  imageName: cupcake.png
+
+Product(donut):
+  name: Donut
+  description: Our secret ingredient to this donut's bright flavor? Apple cider. This pastry is then slathered with sweet vanilla icing and a dusting of turbinado sanding sugar for a lovely crunch.
+  price: 3.85
+  imageName: donut.png
+
+Product(espresso):
+  name: Espresso
+  description: Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.
+  price: 2.45
+  imageName: espresso.png
+
+Product(bread):
+  name: Bread
+  description: Gently spiced cake with candied ginger, topped with delicate vanilla icing with a hint of orange - only available for a limited time.
+  price: 3.25
+  imageName: bread.png
+
+Product(muffin):
+  name: Muffin
+  description: This delicious muffin is dotted throughout with sweet, juicy blueberries and a hint of lemon.
+  price: 2.65
+  imageName: muffin.png
+
+  

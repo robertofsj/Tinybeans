@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Store App</title>
+        <meta charset="${_response_encoding}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+  		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  		<link href="/public/stylesheets/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  		<link rel="shortcut icon" type="image/x-icon" href="https://dgivdslhqe3qo.cloudfront.net/sites/5137/favicon_1521599124.ico">
+    </head>
+    <body>
+        <div id="header">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			  <div class="container">
+			    <a class="navbar-brand" href="@{Products.show()}">My Store App</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarResponsive">
+			      <ul class="navbar-nav ml-auto">
+			        <li class="nav-item active">
+			          <a class="nav-link" href="#">Products
+			            <span class="sr-only">(current)</span>
+			          </a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">About</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">Services</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">Contact</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+        <div id="main" style="padding-top: 100px" align="center">
+            #{doLayout /} 
+        </div>
+        <br><br>
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright &copy; 2018 | Tinybeans Assessment</p>
+			</div>
+			<!-- /.container -->
+		</footer>
+    </body>
+</html>

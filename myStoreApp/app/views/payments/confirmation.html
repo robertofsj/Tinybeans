@@ -1,0 +1,50 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div class="col-lg-9">
+	<div class="row" >
+		<h2>Success:</h2>
+	</div>
+</div>
+
+<div class="col-md-4">
+  <div class="card"  align="left">
+    <div class="card-header card-header-primary">
+      <h4 class="card-title">Payment Succeeded</h4>
+      <p class="card-category">Thank you for your payment.</p>
+    </div>
+    <div class="card-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+            <h6>${flash.success}</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <p><b>Your order ID is</b> ${payInfo.orderId}</p>
+              <p><b>Your payment ref is</b> ${payInfo.chargeId}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row" align="center">
+          <div class="col-md-12">
+            <div class="form-group">
+		        <a href="@{Products.show()}" class="btn btn-info">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/public/javascripts/mask.js" type="text/javascript"></script>
+<script src="/public/javascripts/jquery.min.js" type="text/javascript"></script>
+<script src="/public/javascripts/popper.min.js" type="text/javascript"></script>
+<script src="/public/javascripts/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="/public/javascripts/perfect-scrollbar.jquery.min.js"></script>
+<script src="/public/javascripts/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
