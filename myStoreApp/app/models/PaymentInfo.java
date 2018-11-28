@@ -16,17 +16,17 @@ public class PaymentInfo extends Model{
 
     @Required
     @ManyToOne
-    private User user;
+	public User user;
     @Required 
-    private String orderId;
+    public String orderId;
     @Required 
-    private String chargeId; 
+    public String chargeId; 
     @Required 
-    private String status;
+    public String status;
 	@Required 
-	private Long amount;
+	public Long amount;
 	@Required 
-	private Date created;
+	public Date created;
 	
 	
 	public PaymentInfo(User user, String orderId, String chargeId, String status, Long amount, Date created) {
@@ -35,43 +35,6 @@ public class PaymentInfo extends Model{
 		this.chargeId = chargeId;
 		this.status = status;
 		this.amount = amount;
-		this.created = created;
-	}
-	
-	public User getUser() {
-		return user;
-	}
-	public void setUser(User user) {
-		this.user = user;
-	}
-	public String getOrderId() {
-		return orderId;
-	}
-	public void setOrderId(String orderId) {
-		this.orderId = orderId;
-	}
-	public String getChargeId() {
-		return chargeId;
-	}
-	public void setChargeId(String chargeId) {
-		this.chargeId = chargeId;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public Long getAmount() {
-		return amount;
-	}
-	public void setAmount(Long amount) {
-		this.amount = amount;
-	}
-	public Date getCreated() {
-		return created;
-	}
-	public void setCreated(Date created) {
 		this.created = created;
 	}
 }

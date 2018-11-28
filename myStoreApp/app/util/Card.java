@@ -13,37 +13,10 @@ public class Card {
 
 	@Required 
 	@MinSize(16) 
-	private Long cardNumber; 
+	public Long cardNumber; 
 	@Required 
-	private String expDate; 
+	public String expDate; 
 	@Required 
-	private String cvc;
-	
-	public Card() {};
-	
-	public Card(Long cardNumber, String expDate, String cvc) {
-		this.cardNumber = cardNumber;
-		this.expDate = expDate;
-		this.cvc = cvc;
-	}
-	public Long getCardNumber() {
-		return cardNumber;
-	}
-	public void setCardNumber(Long cardNumber) {
-		this.cardNumber = cardNumber;
-	}
-	public String getExpDate() {
-		return expDate;
-	}
-	public void setExpDate(String expDate) {
-		this.expDate = expDate;
-	}
-	public String getCvc() {
-		return cvc;
-	}
-	public void setCvc(String cvc) {
-		this.cvc = cvc;
-	}
-	
+	public String cvc;
 	
 }

@@ -1,5 +1,5 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'My Store App - Payment Info' /}
 
 <div class="col-lg-9">
 	<div class="row" >
@@ -72,7 +72,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label class="bmd-label-floating">Card Number</label>
-              <input type="text" class="form-control" name="user.card.cardNumber" id="cardNumber" value="${user.card.cardNumber}" required maxlength="16" pattern="([0-9]{13}|[0-9]{15}|[0-9]{16})" title="Enter a valid card number.">
+              <input type="text" class="form-control" name="user.card.cardNumber" id="cardNumber" value="${user.card.cardNumber}" required maxlength="16" pattern="([0-9]{14}|[0-9]{15}|[0-9]{16})" title="Enter a valid card number.">
             </div>
           </div>
         </div>
